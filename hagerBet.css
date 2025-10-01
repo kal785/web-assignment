@@ -1,0 +1,474 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #6d3602;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  color: #f9f2ec;
+  margin: 0 7px;
+  cursor: pointer;
+  padding: 3px;
+  text-decoration: none;
+}
+a:hover {
+  border-bottom: solid;
+  border-width: 2px;
+  padding-bottom: 0;
+  border-color: green;
+}
+
+/* Section Styling */
+section {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  border-bottom: 3px solid #6d3602;
+  padding-bottom: 5px;
+  color: #8b0000;
+  font-family: "Georgia", serif;
+}
+
+/* Ethiopian Color Palette */
+:root {
+  --ethiopian-red: #8b0000;
+  --ethiopian-gold: #ffd900;
+  --ethiopian-green: #006400;
+}
+section h2 {
+  text-align: center;
+}
+
+/*header*/
+.homepage {
+  background-color: #6d3602a9;
+  font-family: open sans, sans-serif;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  text-align: center;
+  height: 75px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 9;
+}
+.left-header {
+  flex: 1;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: 30px;
+  color: #f9f2ec;
+}
+
+.right-header {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  text-align: center;
+  justify-content: right;
+  padding-left: 8%;
+  padding-right: 5%;
+}
+.other {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+.homepage .home,
+.aboutus .right-header .about,
+.menupage .right-header .menu,
+.loginpage .right-header .login {
+  background-color: white;
+  color: #6d3602;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+/*main*/
+main {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/d0c94f0e2fd729ba48fa9785db3d6ce4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: scroll;
+}
+
+main div {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 55%;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+main h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  filter: brightness(70%);
+}
+
+/*today's special*/
+.specials-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+}
+.specials-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.arrow {
+  margin: 20% 2%;
+  padding: 10px;
+  font-size: large;
+  font-weight: bolder;
+  border-radius: 5px 5px;
+  background-color: rgb(51, 51, 51, 0.7);
+}
+
+.special-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: none; /* Hide all slides by default */
+  text-align: center;
+  font-size: 24px;
+}
+
+.special-card:hover,
+.dish:hover {
+  transform: translateY(-5px);
+}
+
+.special-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.special-card h3 {
+  color: #8b0000;
+  margin: 10px 0 5px;
+}
+
+.special-card p {
+  padding: 0 10px 15px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* popular dishs*/
+
+.dish-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.dish-item {
+  text-align: left;
+  background: #f9f2ec;
+  padding: 10px;
+  border-left: 5px solid #6d3602;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+.dish-item h3 {
+  color: #6d3602;
+}
+
+/*pop dish*/
+
+/* .contact-info {
+  margin-top: 5%;
+  display: inline;
+  flex: 1;
+  color: #0e0d0d;
+  z-index: 10;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-info a {
+  color: #8b0000;
+} */
+
+/*just trial */
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove bottom margin */
+}
+
+.fade-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Cover the entire image */
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(49, 49, 49, 0.4) 0%,
+    rgba(0, 0, 0, 1) 70%
+  ); /* Fade effect */
+}
+
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -50%);
+  color: white;
+  text-align: left;
+  width: 70%;
+}
+
+.text-container h2,
+.text-container p {
+  margin: 0; /* Remove default margins */
+}
+
+/* Footer */
+footer {
+  background-color: #6d3602;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/*about page */
+.about p {
+  margin-left: 4%;
+  margin-right: 6%;
+  text-align: center;
+}
+
+.about h1 {
+  text-align: center;
+}
+
+.about p {
+  text-indent: 4%;
+}
+
+/*login page*/
+section .login {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+.login .container {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.hidden {
+  display: none;
+}
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.login a {
+  color: #6d3602;
+}
+
+/* Add to hagerBet.css */
+
+/* General form styling */
+form {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #6d3602;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="date"],
+form input[type="time"],
+form input[type="number"],
+form textarea,
+form select {
+  width: calc(100% - 22px); /* Adjust for padding and border */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+form button {
+  background-color: #6d3602;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #8b0000;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table th {
+  background-color: #6d3602;
+  color: white;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #f9f2ec;
+}
+
+/* Specific section styling */
+.reservation-form,
+.attendance-system,
+.salary-management,
+.menu-editor,
+.about-editor,
+.feedback-section,
+.profile-management,
+.manager-dashboard {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.clock-buttons button {
+  margin-right: 10px;
+  background-color: #006400; /* Ethiopian Green */
+}
+
+.clock-buttons button:hover {
+  background-color: #004d00;
+}
+
+.dashboard-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.dashboard-links li {
+  margin-bottom: 10px;
+}
+
+.dashboard-links a {
+  color: #6d3602;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.dashboard-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hidden class for forms/divs */
+.hidden {
+  display: none;
+}
